@@ -3,8 +3,6 @@ Dynamic Programming Solution to the Maxium Sum of a Circular Array problem such 
 
 Note that for all i, if array[i] contributes to the sum, then array[i + 1] and array[i - 1] may not contribute to the sum.
 Further, we have that the array is circular, i.e array[0] and array[N - 1] are adjacent. 
-
-
 """
 
 def maxSumCircularArrayNoAdjacentElements(array, N):   #O(n) solution.  
@@ -28,8 +26,5 @@ def maxSumCircularArrayNoAdjacentElements(array, N):   #O(n) solution.
 def main():
     test_array = [1, 2, 3, 4] #Clearly the max sum in this case is 6 because of 4 + 2
     print(maxSumCircularArrayNoAdjacentElements(test_array, len(test_array)))
-
-
-
-
+    
 main()
